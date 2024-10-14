@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Subscription</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">DailyNews</h1>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#plans">Plans</a></li>
+                <li><a href="#subscribe">Subscribe</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Stay Informed, Stay Updated</h1>
+            <p>Get the latest news delivered right to your inbox daily. Never miss out on global and local stories!</p>
+            <a href="#subscribe" class="cta-button">Subscribe Now</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>Daily Updates</h3>
+                    <p>Get top headlines daily with personalized categories that matter to you.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Global Coverage</h3>
+                    <p>Access stories from around the world and stay informed on international events.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Breaking News Alerts</h3>
+                    <p>Be the first to know with breaking news alerts sent to your inbox.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Subscribers Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-item">
+                    <p>"The best news subscription service! I never miss important headlines now!"</p>
+                    <h4>- John Doe</h4>
+                </div>
+                <div class="testimonial-item">
+                    <p>"This service is so reliable. The breaking news alerts are my favorite."</p>
+                    <h4>- Jane Smith</h4>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Highly recommend this to anyone who wants to stay informed daily!"</p>
+                    <h4>- Rahul Patel</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription Plans Section -->
+    <section id="plans" class="plans">
+        <div class="container">
+            <h2>Choose Your Plan</h2>
+            <div class="plan-grid">
+                <div class="plan-item">
+                    <h3>Basic</h3>
+                    <p>Free</p>
+                    <ul>
+                        <li>Daily Updates</li>
+                        <li>Email Alerts</li>
+                    </ul>
+                    <a href="#subscribe" class="cta-button">Get Started</a>
+                </div>
+                <div class="plan-item">
+                    <h3>Premium</h3>
+                    <p>$9.99/month</p>
+                    <ul>
+                        <li>Daily Updates</li>
+                        <li>Email Alerts</li>
+                        <li>Ad-Free Experience</li>
+                        <li>Exclusive Content</li>
+                    </ul>
+                    <a href="#subscribe" class="cta-button">Get Premium</a>
+                </div>
+                <div class="plan-item">
+                    <h3>Pro</h3>
+                    <p>$19.99/month</p>
+                    <ul>
+                        <li>Daily Updates</li>
+                        <li>Email Alerts</li>
+                        <li>Ad-Free Experience</li>
+                        <li>Exclusive Content</li>
+                        <li>Early Access to News</li>
+                    </ul>
+                    <a href="#subscribe" class="cta-button">Go Pro</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription Form Section -->
+    <section id="subscribe" class="subscribe">
+        <div class="container">
+            <h2>Subscribe Today</h2>
+            <form method="POST">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 DailyNews. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#plans">Plans</a></li>
+                <li><a href="#subscribe">Subscribe</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
