@@ -1,0 +1,11 @@
+# Ignore .env file
+.env
+
+# Ignore database files
+/instance/emails.db
+
+# Ignore compiled Python files
+__pycache__/
+
+# Ignore other potential sensitive files
+*.pyc
