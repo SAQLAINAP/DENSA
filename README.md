@@ -17,6 +17,10 @@ This project is a Python-based web application built with Flask. It allows users
 - Simple and responsive UI for users to subscribe
 
 ---
+![image](https://github.com/user-attachments/assets/83b09cdd-4efd-4354-8b3a-5746a11b46f3)
+![image](https://github.com/user-attachments/assets/1d7d79f5-dc56-49d2-b274-3d3d503310cb)
+
+---
 
 ### **README.md**:
 
