@@ -29,6 +29,14 @@ class Email(db.Model):
 with app.app_context():
     db.create_all()
 
+# Clear the Database
+@app.route('/clear_subscribers')
+def clear_subscribers():
+    with app.app_context():
+        num_deleted = Email.query.delete()
+        db.session.commit()
+        return f"Deleted {num_deleted} subscribers."
+
 # Mail configuration
 class Config:
     MAIL_SERVER = os.environ.get('MAIL_SERVER', 'smtp.gmail.com')
@@ -140,4 +148,4 @@ def test_email():
     return f"Test email sent to {test_email}!"
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)

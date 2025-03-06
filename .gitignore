@@ -1,11 +1,44 @@
-# Ignore .env file
-.env
-
-# Ignore database files
-/instance/emails.db
-
-# Ignore compiled Python files
+# Byte-compiled / optimized / DLL files
 __pycache__/
-
-# Ignore other potential sensitive files
 *.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+env/
+venv/
+ENV/
+*.venv
+
+# Flask and Python-specific files
+instance/
+*.sqlite3
+*.db
+config.py
+.env
+.env.local
+.env.production
+.env.test
+
+# Logs and local files
+logs/
+*.log
+nohup.out
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+*.dockerfile
+*.img
+
+# VSCode and other IDEs
+.vscode/
+*.swp
+.idea/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Cache and temp files
+*.bak
+*.tmp
